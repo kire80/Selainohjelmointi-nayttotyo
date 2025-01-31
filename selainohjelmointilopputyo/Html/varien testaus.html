@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <!-- Linkit ja kaikki muu tärkeä -->
+    <head>
+        <title>Varien testaus</title>
+        <link rel="icon" type="image/x-icon" href="../Kuvat/paint.png">
+        <meta charset="UTF-8">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../CSS/vtstyle.css">
+        <script src="../JS/nams.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <body>
+        <!-- Sivun ylhäällä oleva navogointi palkki -->
+        <div class="topnav" id="myTopnav">
+            
+            <a href="index.html">Etusivu</a>
+            <a href="palvelut.html">Palvelut</a>
+            <a href="galleria.html">Galleria</a>
+            <a class="active" href="varien testaus.html"> Värien testaus</a>
+            <a href="yhteystiedot.html">Yhteystiedot</a>
+            <a href="javascript:void(0);" class="icon" onclick="NavResp()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- Värien testaus paneeli -->
+         <!-- Värien testaus pinnat -->
+    <div class="square-container">
+        <div class="square" id="colorSquare"></div>
+        <div class="square2" id="colorSquare2"></div>
+    </div>
+        
+<br>
+        <!-- Värien resetointi nappi -->
+        <div class="reset-container">
+            <button class="reset" onclick="resetColors()">Tyhjennä</button>
+        </div><br>
+
+        <!-- Vasemman pinnan värivalinta napit -->
+        <h1>Vasen pinta</h1>
+        <div class="button-container">
+            <button class="fiesta" onclick="changeColor('#DD4132')">Fiesta</button>
+            <button class="jester-red" onclick="changeColor('#9E1030')">Jester Red</button>
+            <button class="turmeric" onclick="changeColor('#FE840E')">Turmeric</button>
+            <button class="living-coral" onclick="changeColor('#FF6F61')">Living Coral</button>
+            <button class="pink-peacock" onclick="changeColor('#C62168')">Pink Peacock</button>
+            <button class="pepper-stem" onclick="changeColor('#8D9440')">Pepper Stem</button>
+            <button class="aspen-gold" onclick="changeColor('#FFD662')">Aspen Gold</button>
+            <button class="princess-blue" onclick="changeColor('#00539C')">Princess Blue</button>
+            <button class="toffee" onclick="changeColor('#755139')">Toffee</button>
+            <button class="mango-mojito" onclick="changeColor('#D69C2F')">Mango Mojito</button>
+            <button class="terrarium-moss" onclick="changeColor('#616247')">Terrarium Moss</button>
+            <button class="sweet-lilac" onclick="changeColor('#E8B5CE')">Sweet Lilac</button>
+            <button class="soybean" onclick="changeColor('#D2C29D')">Soybean</button>
+            <button class="eclipse" onclick="changeColor('#343148')">Eclipse</button>
+            <button class="sweet-corn" onclick="changeColor('#F0EAD6')">Sweet Corn</button>
+            <button class="brown-granite" onclick="changeColor('#615550')">Brown Granite</button>
+        </div>
+        <br>
+
+        <!-- Oikean pinnan värivalinta napit -->
+        <h1>Oikea pinta</h1>
+        <div class="button-container2">
+            <button class="fiesta" onclick="changeColor2('#DD4132')">Fiesta</button>
+            <button class="jester-red" onclick="changeColor2('#9E1030')">Jester Red</button>
+            <button class="turmeric" onclick="changeColor2('#FE840E')">Turmeric</button>
+            <button class="living-coral" onclick="changeColor2('#FF6F61')">Living Coral</button>
+            <button class="pink-peacock" onclick="changeColor2('#C62168')">Pink Peacock</button>
+            <button class="pepper-stem" onclick="changeColor2('#8D9440')">Pepper Stem</button>
+            <button class="aspen-gold" onclick="changeColor2('#FFD662')">Aspen Gold</button>
+            <button class="princess-blue" onclick="changeColor2('#00539C')">Princess Blue</button>
+            <button class="toffee" onclick="changeColor2('#755139')">Toffee</button>
+            <button class="mango-mojito" onclick="changeColor2('#D69C2F')">Mango Mojito</button>
+            <button class="terrarium-moss" onclick="changeColor2('#616247')">Terrarium Moss</button>
+            <button class="sweet-lilac" onclick="changeColor2('#E8B5CE')">Sweet Lilac</button>
+            <button class="soybean" onclick="changeColor2('#D2C29D')">Soybean</button>
+            <button class="eclipse" onclick="changeColor2('#343148')">Eclipse</button>
+            <button class="sweet-corn" onclick="changeColor2('#F0EAD6')">Sweet Corn</button>
+            <button class="brown-granite" onclick="changeColor2('#615550')">Brown Granite</button>
+        </div>
+    </body>
+    <br><br><br><br><br><br>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footercontent">
+            <div class="footerlinkit">
+                <a href="" data-toggle="tooltip" title="Ei ole" data-placement="bottom">Tietoa meistä</a>
+                <a href="" data-toggle="tooltip" title="Ei ole" data-placement="bottom">Tietosuojaseloste</a>
+                <a href="../Html/yhteystiedot.html">Ota yhteyttä</a>
+            </div>
+            <div class="footersome">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.x.com" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>© 2025 Kotkantien maalaus- ja tapetointi. Kaikki oikeudet pidätetään.</p>
+        </div>
+    </footer>
+</html>

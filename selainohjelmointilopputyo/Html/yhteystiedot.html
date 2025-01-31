@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <!-- Linkit ja kaikki muu tärkeä -->
+    <head>
+        <title>Yhteydenottolomake</title>
+        <link rel="icon" type="image/x-icon" href="../Kuvat/paint.png">
+        <meta charset="UTF-8">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../CSS/ytstyle.css">
+        <script src="../JS/nams.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!-- Sivun ylhäällä oleva navogointi palkki -->
+        <div class="topnav" id="myTopnav">
+            
+            <a href="index.html">Etusivu</a>
+            <a href="palvelut.html">Palvelut</a>
+            <a href="galleria.html">Galleria</a>
+            <a href="varien testaus.html"> Värien testaus</a>
+            <a class="active" href="yhteystiedot.html">Yhteystiedot</a>
+            <a href="javascript:void(0);" class="icon" onclick="NavResp()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- Yhteydenottolomake -->
+        <div class="container">
+            <h1>Yhteydenottolomake</h1>
+            
+            <!-- Seuraava rivi on bootstrap popover yhteystiedot nappi -->
+            <h3 href="#" data-toggle="popover" data-content="Osoite: Kotkantie 3, 90100 Oulu Puhelinnumero: 044 999 888 99 Sähköposti: info@kotkantienmaalaus.fi" data-placement="bottom">Yhteystiedot</h3>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Nimi" required>
+                <input type="email" id="email" name="email" placeholder="Sähköposti" required>
+                <input type="text" id="subject" name="subject" placeholder="Aihe" required>
+                <textarea id="message" name="message" placeholder="Viesti" required></textarea>
+                <button type="submit">Lähetä</button>
+            </form>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footercontent">
+                <div class="footerlinkit">
+                    <a href="" data-toggle="tooltip" title="Ei ole" data-placement="bottom">Tietoa meistä</a>
+                    <a href="" data-toggle="tooltip" title="Ei ole" data-placement="bottom">Tietosuojaseloste</a>
+                    <a href="yhteystiedot.html">Ota yhteyttä</a>
+                </div>
+                <div class="footersome">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.x.com" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="footerbottom">
+                <p>© 2025 Kotkantien maalaus- ja tapetointi. Kaikki oikeudet pidätetään.</p>
+            </div>
+        </footer>
+</html>

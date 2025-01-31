@@ -1,0 +1,216 @@
+/* Koko sivuun vaikuttavat jutut */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Viiva */
+hr {
+  border-top: 1px solid black;
+}
+
+/* Tekstit */
+h1 {
+    font-weight: bold;
+      font-size: 22px;
+}
+.ylateksti {
+  text-align: center;
+}
+h2 {
+      font-size: 15px;
+      font-weight: bold;
+}
+  
+p {
+      font-size: 12px;
+}
+
+/* Topnav muotoilu */
+.topnav {
+    overflow: hidden;
+    background-color: #2c3e50;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+.topnav a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+  
+.topnav a.active {
+    background-color: #e74c3c;
+    color: white;
+}
+  
+.topnav .icon {
+    display: none;
+}
+  
+/* Topnav ja footer responsiivisuus */
+@media screen and (max-width: 600px) {
+    .topnav a { display: none; }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive { position: relative; }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .footercontent {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  left: 0;
+  bottom: 0;
+  margin-top: auto;
+}
+  
+.footercontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+.footerlinkit {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+  
+.footerlinkit a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+  
+.footerlinkit a:hover {
+    color: #3498db;
+}
+  
+.footersome {
+    display: flex;
+    gap: 10px;
+}
+  
+.footersome a {
+    color: #ecf0f1;
+    font-size: 20px;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
+}
+  
+.footersome a:hover {
+    transform: scale(1.2);
+    color: #3498db;
+}
+  
+.footerbottom {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Kuvagallerian muotoilu */
+* {
+    box-sizing: border-box;
+}
+  
+body {
+  background-color: #f1f1f1;
+    
+  font-family: Arial;
+}
+  
+.main {
+  max-width: 1400px;
+  margin: auto;
+}
+  
+h1 {
+  word-break: break-all;
+}
+  
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Kuvagalleria responsiivisuus */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
